@@ -1,0 +1,77 @@
+programming:
+    title: 程式開發類
+    courses:
+        html-css:
+            title: HTML & CSS 基礎入門
+            lead: 2014-10 月已開班
+            desc: HTML & CSS
+        javascript:
+            title: Javascript 前端實戰
+            lead: 課程規劃中
+            desc: 課程規劃中
+        javascript:
+            title: Javascript 前端實戰
+            lead: 課程規劃中
+            desc: 課程規劃中
+        php:
+            title: PHP 基礎 Web 開發
+            lead: 課程規劃中
+            desc: 課程規劃中
+        ror:
+            title: Ruby on Rails 網站開發
+            lead: 課程規劃中
+            desc: 課程規劃中
+        laravel:
+            title: Laravel Web MVC 開發
+            lead: 課程規劃中
+            desc: 課程規劃中
+        joomla-extensions:
+            title: Joomla CMS 擴充套件開發
+            lead: 課程規劃中
+            desc: 課程規劃中
+        obj-c:
+            title: iOS App 開發 (Objective-C)
+            lead: 課程規劃中
+            desc: 課程規劃中
+        swift:
+            title: iOS App 開發 (Swift)
+            lead: 課程規劃中
+            desc: 課程規劃中
+        android:
+            title: Android App 開發
+            lead: 課程規劃中
+            desc: 課程規劃中
+        mis:
+            title: MIS 網管技能班
+            lead: 課程規劃中
+            desc: 課程規劃中
+design:
+    title: 設計類
+    courses:
+        design-basic:
+            title: 設計與印刷實務
+            lead: 課程規劃中
+            desc: 課程規劃中
+        web-design:
+            title: 網頁前端設計
+            lead: 課程規劃中
+            desc: 課程規劃中
+        ui-design:
+            title: UI 與人機介面設計
+            lead: 課程規劃中
+            desc: 課程規劃中
+management:
+    title: 企劃與管理
+    courses:
+        product-management:
+            title: 產品經理實務班
+            lead: 課程規劃中
+            desc: 課程規劃中
+        web-plan:
+            title: 網站規劃與協同合作
+            lead: 課程規劃中
+            desc: 課程規劃中
+        ux-design:
+            title: UX 使用者經驗設計
+            lead: 課程規劃中
+            desc: 課程規劃中

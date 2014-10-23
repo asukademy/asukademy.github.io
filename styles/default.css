@@ -1,10 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Oswald:300,400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500);
 html,
 body {
   font-family: 'Roboto', 'LeHei Pro', '微軟正黑體', sans-serif;
   font-size: 15px;
+  line-height: 175%;
 }
 h1,
 h2,
@@ -12,7 +13,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Oswald', 'LeHei Pro', '微軟正黑體', sans-serif;
+  font-family: 'Oswald', 'LeHei Pro', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Regular', '微軟正黑體', sans-serif;
+  margin-bottom: 1em;
 }
 a {
   transition: all 0.5s;
@@ -53,10 +55,23 @@ a:hover {
 }
 #banner {
   background: url(../media/img/banner-2000.jpg) center center no-repeat;
-  min-height: 550px;
 }
 #main-body {
   padding-top: 50px;
+}
+#main-body h1.page-title {
+  text-align: center;
+  margin-bottom: 0.3em;
+}
+#main-body h2.sub-title {
+  text-align: center;
+  margin-top: 0;
+  font-weight: 300;
+  color: #999;
+  font-family: 'Roboto', 'LeHei Pro', '微軟正黑體', sans-serif;
+}
+.main-block {
+  padding: 50px 0;
 }
 #features h2 {
   font-size: 36px;
@@ -68,7 +83,22 @@ a:hover {
   line-height: 200%;
   margin: 75px 0;
 }
+.basic-layout h1,
+.basic-layout h2,
+.basic-layout h3 {
+  text-align: center;
+}
+.basic-layout article.article-content {
+  margin-top: 50px;
+}
+.courses-layout h2.category-title {
+  margin-top: 50px;
+}
+.courses-layout .course-item {
+  margin-top: 30px;
+}
 #footer {
+  margin-top: 50px;
   padding-top: 150px;
   padding-bottom: 100px;
   background-color: #222;

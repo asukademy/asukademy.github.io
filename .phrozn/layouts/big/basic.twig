@@ -1,9 +1,18 @@
-layouts: default.twig
----
 {% extends 'default.twig' %}
 
 {% block body %}
-<div id="main-body">
+<div id="main-body" class="basic-layout">
+    <section id="basic-section" class="main-block">
+        <div class="uk-container uk-container-center">
+            <div class="uk-width-medium-4-6 uk-container-center">
+                <h1 class="page-title">{{ this.title }}</h1>
+                <h2 class="sub-title">{{ this.sub_title }}</h2>
 
+                <article class="article-content">
+                    {{ content }}
+                </article>
+            </div>
+        </div>
+    </section>
 </div>
 {% endblock %}

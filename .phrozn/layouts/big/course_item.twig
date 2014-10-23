@@ -1,0 +1,30 @@
+providers:
+    courses:
+        provider: 'Courses'
+
+---
+{% extends 'default.twig' %}
+
+{% block body %}
+<div id="main-body" class="basic-layout">
+    <section id="basic-section" class="main-block">
+        <div class="uk-container uk-container-center">
+            <div class="uk-grid">
+                <div class="uk-width-medium-1-4 uk-container-center">
+                    <h2>MENU</h2>
+                    {% include 'courses/_menu.twig' %}
+                </div>
+
+                <div class="uk-width-medium-3-4 uk-container-center">
+                    <h1 class="page-title">{{ this.title }}</h1>
+                    <h2 class="sub-title">{{ this.sub_title }}</h2>
+
+                    <article class="article-content">
+                        {{ content }}
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

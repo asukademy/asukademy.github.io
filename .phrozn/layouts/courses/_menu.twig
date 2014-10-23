@@ -1,0 +1,19 @@
+<ul class="uk-nav uk-nav-side" data-uk-nav="">
+
+    {% for cat_key, category in this.providers.courses %}
+        <li class="uk-nav-header">{{ category.title }}</li>
+
+        {% for key, course in category.courses %}
+
+            {% include 'menu/_item.twig' with {
+                'item_id': key,
+                'item_title': course.title,
+                'item_link': this.basepath ~ 'courses/' ~ key ~ '.html',
+                'item_active': (this.course == key)
+            } %}
+
+        {% endfor %}
+
+        <li class="uk-nav-divider"></li>
+    {% endfor %}
+</ul>
