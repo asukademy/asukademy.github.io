@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+html,
+body {
+  font-family: 'Roboto', 'LeHei Pro', '微軟正黑體', sans-serif;
+  font-size: 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', 'LeHei Pro', '微軟正黑體', sans-serif;
+}
+a {
+  transition: all 0.5s;
+}
+a:hover {
+  transition: all 0.5s;
+}
+#header {
+  height: 70px;
+}
+#header.uk-navbar {
+  background-color: #ffffff;
+}
+#header .uk-navbar-brand {
+  height: 70px;
+}
+#header .uk-navbar-brand img {
+  max-height: 100%;
+  padding: 10px;
+}
+#header .uk-navbar-nav > li > a {
+  font-family: 'Roboto', 'LeHei Pro', '微軟正黑體', sans-serif;
+  height: 70px;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-top: 18px;
+}
+#header span.menu-item-title {
+  display: block;
+  line-height: 140%;
+}
+#header span.menu-item-sub-title {
+  font-size: 60%;
+  text-transform: uppercase;
+  color: #A0A0A0;
+  display: block;
+  line-height: 140%;
+}
+#banner {
+  background: url(../media/img/banner-2000.jpg) center center no-repeat;
+  min-height: 550px;
+}
+#main-body {
+  padding-top: 50px;
+}
+#features h2 {
+  font-size: 36px;
+}
+#features .uk-container {
+  max-width: 960px;
+}
+#features .feature-item {
+  line-height: 200%;
+  margin: 75px 0;
+}
+#footer {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background-color: #222;
+  color: #ddd;
+}
+#footer a {
+  color: #eee;
+}
+#footer a:hover {
+  color: #999;
+  text-decoration: none;
+}
+#footer a.uk-icon-button {
+  color: #333;
+}
