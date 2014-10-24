@@ -8,8 +8,6 @@ course: 'html-css'
 
 ---
 
-![logo](../media/img/courses/teaser/html-css.png){.center.round.course-logo}
-
 HTML & CSS 是 Web 世界的基礎骨幹，所有的 Web 開發都將從此處開始，無論你是設計師還是前後端工程師，學習這門技術是你邁向網路世界的第一步。
 
 ## 課程規劃
