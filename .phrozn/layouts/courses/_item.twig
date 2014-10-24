@@ -4,9 +4,9 @@
     </a>
     <h2>{{ course.title ?: 'Course Title' }}</h2>
     <p class="uk-article-lead uk-text-muted">{{ course.lead ?: 'Course Lead' }}</p>
-    <p>
-        {{ course.desc ?: 'Course Desc.' }}
-    </p>
+
+    {{ course.desc ?: 'Course Desc.' }}
+
     <p>
         <a class="uk-button uk-button-primary" href="{{ this.basepath }}courses/{{ course.id }}.html">了解詳情</a>
     </p>

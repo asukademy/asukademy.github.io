@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Oswald', 'LeHei Pro', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Regular', '微軟正黑體', sans-serif;
+  font-family: 'Oswald', 'LeHei Pro', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', '微軟正黑體', sans-serif;
   margin-bottom: 1em;
 }
 a {
@@ -21,6 +21,21 @@ a {
 }
 a:hover {
   transition: all 0.5s;
+}
+.uk-table td,
+.uk-table th {
+  padding: 8px;
+  border-bottom: 1px solid #e5e5e5;
+}
+dl dt {
+  min-width: 130px;
+  float: left;
+}
+dl dt,
+dl dd {
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+  border-bottom: 1px solid #e5e5e5;
 }
 #header {
   height: 70px;
