@@ -10,8 +10,8 @@ active_menu: about
 ## 什麼是飛鳥學院
 
 飛鳥，在日文中意味著「安居之地」，意即這樣一個地方，既能如飛鳥般意氣風發、前程萬里，卻又是一個可以讓人寧靜定居的故鄉。
-我們希望飛鳥學院能夠帶領學生們意氣風發的面對人生，在競爭激烈的現代社會中立足，更希望成為員工們的安居之地，給予大家一個溫暖無後顧之憂的後盾，
-以專心面對人生一切的挑戰。
+我們希望飛鳥學院能夠帶領學生們意氣風發的面對人生，在競爭激烈的現代社會中立足，更希望成為員工們的安居之地，給予大家一個溫暖無後顧之憂的環境，
+專心面對人生的一切挑戰。
 
 ## 飛鳥學院的理念
 
@@ -28,11 +28,17 @@ active_menu: about
 
 ## 飛鳥學院的特色
 
-創辦人飛鳥本身長期專注於各類不同領域，如設計、藝術、管理、行銷、工程與雲端技術等，並依據自己的實戰經驗規劃出適合新手學習的教育過程。
-我們非常重視教育理論的設計，也著重基本功力的培養，不為了吸引學生繳交高額學費而教授花俏的技巧。在飛鳥學院中，我們努力提供課程學生有實戰經驗的機會，
+我們過去長期專注於各類不同領域，如設計、藝術、管理、行銷、工程與雲端技術等，並依據自己的實戰經驗規劃出適合新手學習的教育過程。
+飛鳥學院非常重視教育理論的設計，也著重基本功力的培養，不為了吸引學生繳交高額學費而教授花俏的技巧。在飛鳥學院中，我們努力提供課程學生有實戰經驗的機會，
 並試圖結合業界需求，提供合適工作機會與認證制度，期望創造人才與企業方的雙贏。
 
 ## 2012 飛鳥實習的學生作品
 
 <div id="photos"></div>
-<iframe src="http://embedsocial.com/facebook_album/album_photos/349910658510987" width="750" height="1450" frameborder="0" scrolling="no" marginheight="0"  marginwidth="0"></iframe>
+<iframe src="http://embedsocial.com/facebook_album/album_photos/349910658510987" width="750" height="960" frameborder="0" scrolling="no" marginheight="0"  marginwidth="0"></iframe>
+
+<p class="uk-text-center">
+    <a style="margin-top: 50px;" class="see-course-button uk-button uk-button-hero uk-button-primary" href="../courses">
+        立即了解我們的課程內容
+    </a>
+</p>

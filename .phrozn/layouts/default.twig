@@ -23,7 +23,12 @@
 </head>
 <body>
 {% include 'layouts/menu.twig'%}
-{% include 'banners/home.twig' %}
+
+<section id="banner" style="{{ this.banner.image ? 'background-image: ' ~ this.banner.image ~ ';' : '' }}height:{{ this.banner.height ?: '200px' }} ;">
+    <div class="banner-inner">
+
+    </div>
+</section>
 
 {% block body %}
 <div id="main-body">

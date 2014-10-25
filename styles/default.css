@@ -4,7 +4,7 @@
 html,
 body {
   font-family: 'Roboto', 'LeHei Pro', '微軟正黑體', sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 175%;
 }
 h1,
@@ -21,6 +21,20 @@ a {
 }
 a:hover {
   transition: all 0.5s;
+}
+.uk-button {
+  border-radius: 3px;
+}
+.uk-button-hero {
+  padding: 10px 20px;
+  line-height: 40px;
+  font-size: 24px;
+}
+.uk-button-primary {
+  box-shadow: 0 4px 0 #0091cc;
+}
+.uk-button-primary:hover {
+  box-shadow: 0 4px 0 #009fde;
 }
 .center {
   margin-left: auto;
@@ -76,8 +90,30 @@ dl dd {
   display: block;
   line-height: 140%;
 }
+#header.home {
+  background: transparent;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  color: #fff;
+}
+#header.home a {
+  color: #fff;
+}
+#header.home a:hover {
+  background: transparent;
+  color: #333;
+}
+#header.home a:hover span.menu-item-sub-title {
+  color: #999;
+  transition: all 0.5s;
+}
+#header.home span.menu-item-sub-title {
+  color: #f3f3f3;
+  transition: all 0.5s;
+}
 #banner {
-  background: url(../media/img/banner-2000.jpg) center center no-repeat;
+  background: url(../media/img/banner/banner-2000.jpg) center center no-repeat;
 }
 #main-body {
   padding-top: 50px;
@@ -94,17 +130,55 @@ dl dd {
   font-family: 'Roboto', 'LeHei Pro', '微軟正黑體', sans-serif;
 }
 .main-block {
-  padding: 50px 0;
+  padding: 75px 0;
+}
+#features {
+  margin-bottom: 75px;
 }
 #features h2 {
   font-size: 36px;
 }
 #features .uk-container {
-  max-width: 960px;
+  max-width: 1200px;
 }
 #features .feature-item {
   line-height: 200%;
   margin: 75px 0;
+}
+.feature-block {
+  padding: 20% 0;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #000;
+  font-family: 'Oswald', 'LeHei Pro', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', '微軟正黑體', sans-serif;
+}
+.feature-block h1,
+.feature-block h2,
+.feature-block h3,
+.feature-block h4 {
+  color: #fff;
+  margin-top: 1em;
+}
+.feature-block h2 {
+  font-size: 36px;
+}
+#what-we-do {
+  background-color: #999;
+  background: url(../media/img/banner/feature-1.jpg) center center no-repeat;
+}
+#what-we-do h1,
+#what-we-do h2,
+#what-we-do h3,
+#what-we-do h4 {
+  margin-top: 1em;
+}
+#our-feature {
+  background-color: #666;
+  background: url(../media/img/banner/feature-2.jpg) center center no-repeat;
+}
+#our-concept {
+  background-color: #999;
+  background: url(../media/img/banner/feature-3.jpg) center center no-repeat;
 }
 .basic-layout h1,
 .basic-layout h2,
@@ -140,4 +214,10 @@ dl dd {
 }
 #footer a.uk-icon-button {
   color: #333;
+}
+#footer .footer-logo a {
+  opacity: 0.8;
+}
+#footer .footer-logo a:hover {
+  opacity: 1;
 }
