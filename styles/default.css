@@ -23,18 +23,23 @@ a {
 a:hover {
   transition: all 0.5s;
 }
+/*
 .jf-loading body {
-  opacity: 0;
-  transition: all 0.2s;
+	opacity: 0;
+	// visibility: hidden;
+	.transition(.2s);
 }
 .jf-active body {
-  opacity: 1;
-  transition: all 0.2s;
+	opacity: 1;
+	// visibility: visible;
+	.transition(.2s);
 }
 .jf-inactive body {
-  opacity: 1;
-  transition: all 0.2s;
+	opacity: 1;
+	// visibility: visible;
+	.transition(.2s);
 }
+*/
 .uk-button {
   border-radius: 3px;
 }
