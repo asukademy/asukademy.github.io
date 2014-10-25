@@ -9,11 +9,11 @@
 }
 
 .body-font() {
-	font-family: 'Roboto', 'LeHei Pro', '微軟正黑體', sans-serif;
+	font-family: 'Roboto', 'Xin4', 'LeHei Pro', '微軟正黑體', sans-serif;
 }
 
 .title-font() {
-	font-family: 'Oswald', 'LeHei Pro', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', '微軟正黑體', sans-serif;
+	font-family: 'Oswald', 'LeHei Pro', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', "Xin6", '微軟正黑體', sans-serif;
 }
 
 // Global
@@ -35,6 +35,7 @@ h5,
 h6 {
 	.title-font();
 	margin-bottom: 1em;
+	line-height: 120%;
 }
 
 a {
@@ -43,6 +44,23 @@ a {
 
 a:hover {
 	.transition(.5s);
+}
+
+// Justfont
+.jf-loading body {
+	opacity: 0;
+	// visibility: hidden;
+	.transition(.2s);
+}
+.jf-active body {
+	opacity: 1;
+	// visibility: visible;
+	.transition(.2s);
+}
+.jf-inactive body {
+	opacity: 1;
+	// visibility: visible;
+	.transition(.2s);
 }
 
 // Uikit
@@ -61,6 +79,17 @@ a:hover {
 
 	&:hover {
 		box-shadow: 0 4px 0 #009fde;
+	}
+}
+
+h1, h2, h3, h4 ,h5, h6 {
+	a {
+		color: #444;
+
+		&:hover {
+			color: #666;
+			text-decoration: none;
+		}
 	}
 }
 
@@ -104,6 +133,7 @@ dl {
 // Header
 #header {
 	height: 70px;
+	position: relative;
 
 	&.uk-navbar {
 		background-color: #ffffff;
@@ -119,7 +149,7 @@ dl {
 	}
 
 	.uk-navbar-nav > li > a {
-		.body-font();
+		font-family: 'Roboto', 'Xin6', 'LeHei Pro', '微軟正黑體', sans-serif;
 		height: 70px;
 		font-size: 16px;
 		text-transform: uppercase;
@@ -132,7 +162,7 @@ dl {
 	}
 
 	span.menu-item-sub-title {
-		font-size: 60%;
+		font-size: 80%;
 		text-transform: uppercase;
 		color: #A0A0A0;
 		display: block;
@@ -147,22 +177,53 @@ dl {
 		color: #fff;
 
 		a {
-			color: #fff;
+			color: #715E49;
 
 			&:hover {
 				background: transparent;
 				color: #333;
 
 				span.menu-item-sub-title {
-					color: #999;
+					color: #333;
+					opacity: .84;
 					.transition(.5s);
 				}
 			}
 		}
 
 		span.menu-item-sub-title {
-			color: #f3f3f3;
+			color: #715E49;
+			opacity: .84;
 			.transition(.5s);
+		}
+	}
+
+	.uk-navbar-toggle {
+		margin-top: 15px;
+	}
+
+	#mainmenu {
+		@media (max-width: 767px) {
+			position: absolute;
+			width: 100%;
+			margin: 0;
+			left: 0;
+			background-color: #fff;
+			border-top: 1px solid #eee;
+			border-bottom: 1px solid #eee;
+
+			&.uk-hidden-small {
+				.transition(.5s);
+			}
+
+			li {
+				width: 100%;
+				float: none;
+
+				a:hover {
+					background: #eee;
+				}
+			}
 		}
 	}
 }

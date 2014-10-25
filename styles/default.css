@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500);
 html,
 body {
-  font-family: 'Roboto', 'LeHei Pro', '微軟正黑體', sans-serif;
+  font-family: 'Roboto', 'Xin4', 'LeHei Pro', '微軟正黑體', sans-serif;
   font-size: 17px;
   line-height: 175%;
 }
@@ -13,14 +13,27 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Oswald', 'LeHei Pro', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', '微軟正黑體', sans-serif;
+  font-family: 'Oswald', 'LeHei Pro', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', "Xin6", '微軟正黑體', sans-serif;
   margin-bottom: 1em;
+  line-height: 120%;
 }
 a {
   transition: all 0.5s;
 }
 a:hover {
   transition: all 0.5s;
+}
+.jf-loading body {
+  opacity: 0;
+  transition: all 0.2s;
+}
+.jf-active body {
+  opacity: 1;
+  transition: all 0.2s;
+}
+.jf-inactive body {
+  opacity: 1;
+  transition: all 0.2s;
 }
 .uk-button {
   border-radius: 3px;
@@ -35,6 +48,23 @@ a:hover {
 }
 .uk-button-primary:hover {
   box-shadow: 0 4px 0 #009fde;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #444;
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  color: #666;
+  text-decoration: none;
 }
 .center {
   margin-left: auto;
@@ -61,6 +91,7 @@ dl dd {
 }
 #header {
   height: 70px;
+  position: relative;
 }
 #header.uk-navbar {
   background-color: #ffffff;
@@ -73,7 +104,7 @@ dl dd {
   padding: 10px;
 }
 #header .uk-navbar-nav > li > a {
-  font-family: 'Roboto', 'LeHei Pro', '微軟正黑體', sans-serif;
+  font-family: 'Roboto', 'Xin6', 'LeHei Pro', '微軟正黑體', sans-serif;
   height: 70px;
   font-size: 16px;
   text-transform: uppercase;
@@ -84,7 +115,7 @@ dl dd {
   line-height: 140%;
 }
 #header span.menu-item-sub-title {
-  font-size: 60%;
+  font-size: 80%;
   text-transform: uppercase;
   color: #A0A0A0;
   display: block;
@@ -98,19 +129,45 @@ dl dd {
   color: #fff;
 }
 #header.home a {
-  color: #fff;
+  color: #715E49;
 }
 #header.home a:hover {
   background: transparent;
   color: #333;
 }
 #header.home a:hover span.menu-item-sub-title {
-  color: #999;
+  color: #333;
+  opacity: .84;
   transition: all 0.5s;
 }
 #header.home span.menu-item-sub-title {
-  color: #f3f3f3;
+  color: #715E49;
+  opacity: .84;
   transition: all 0.5s;
+}
+#header .uk-navbar-toggle {
+  margin-top: 15px;
+}
+@media (max-width: 767px) {
+  #header #mainmenu {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  #header #mainmenu.uk-hidden-small {
+    transition: all 0.5s;
+  }
+  #header #mainmenu li {
+    width: 100%;
+    float: none;
+  }
+  #header #mainmenu li a:hover {
+    background: #eee;
+  }
 }
 #banner {
   background: url(../media/img/banner/banner-2000.jpg) center center no-repeat;
@@ -127,7 +184,7 @@ dl dd {
   margin-top: 0;
   font-weight: 300;
   color: #999;
-  font-family: 'Roboto', 'LeHei Pro', '微軟正黑體', sans-serif;
+  font-family: 'Roboto', 'Xin4', 'LeHei Pro', '微軟正黑體', sans-serif;
 }
 .main-block {
   padding: 75px 0;
@@ -150,7 +207,7 @@ dl dd {
   text-align: center;
   color: #ffffff;
   text-shadow: 1px 1px 3px #000;
-  font-family: 'Oswald', 'LeHei Pro', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', '微軟正黑體', sans-serif;
+  font-family: 'Oswald', 'LeHei Pro', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', "Xin6", '微軟正黑體', sans-serif;
 }
 .feature-block h1,
 .feature-block h2,

@@ -2,7 +2,9 @@
     <a href="{{ this.basepath }}courses/{{ course.id }}.html">
         <img class="uk-border-rounded work-img" src="{{ this.basepath }}media/img/courses/teaser/{{ course.id }}.png" alt="{{ course.title }} Image">
     </a>
-    <h2>{{ course.title ?: 'Course Title' }}</h2>
+
+        <h2><a href="{{ this.basepath }}courses/{{ course.id }}.html">{{ course.title ?: 'Course Title' }}</a></h2>
+
     <p class="uk-article-lead uk-text-muted">{{ course.lead ?: 'Course Lead' }}</p>
 
     {{ course.desc ?: 'Course Desc.' }}
