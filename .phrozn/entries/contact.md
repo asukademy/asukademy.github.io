@@ -20,4 +20,6 @@ banner:
 
 ## 其他任何疑問請聯絡
 
-asika32764@gmail.com / Simon
+<p class="uk-alert uk-text-center">
+    asika32764@gmail.com / Simon
+</p>

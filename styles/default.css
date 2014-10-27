@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500);
 html,
 body {
-  font-family: 'Roboto', 'Xin4', 'LeHei Pro', '微軟正黑體', sans-serif;
+  font-family: 'Roboto', /*'Xin4',*/ 'Heiti TC', '微軟正黑體', sans-serif;
   font-size: 17px;
   line-height: 175%;
 }
@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Oswald', 'LeHei Pro', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', "Xin6", '微軟正黑體', sans-serif;
+  font-family: 'Oswald', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', 'LiHei Pro', "Xin6", '微軟正黑體', sans-serif;
   margin-bottom: 1em;
   line-height: 120%;
 }
@@ -109,7 +109,7 @@ dl dd {
   padding: 10px;
 }
 #header .uk-navbar-nav > li > a {
-  font-family: 'Roboto', 'Xin6', 'LeHei Pro', '微軟正黑體', sans-serif;
+  font-family: 'Roboto', 'LiHei Pro', 'Heiti TC', 'Xin6', '微軟正黑體', sans-serif;
   height: 70px;
   font-size: 16px;
   text-transform: uppercase;
@@ -189,7 +189,7 @@ dl dd {
   margin-top: 0;
   font-weight: 300;
   color: #999;
-  font-family: 'Roboto', 'Xin4', 'LeHei Pro', '微軟正黑體', sans-serif;
+  font-family: 'Roboto', /*'Xin4',*/ 'Heiti TC', '微軟正黑體', sans-serif;
 }
 .main-block {
   padding: 75px 0;
@@ -212,7 +212,7 @@ dl dd {
   text-align: center;
   color: #ffffff;
   text-shadow: 1px 1px 3px #000;
-  font-family: 'Oswald', 'LeHei Pro', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', "Xin6", '微軟正黑體', sans-serif;
+  font-family: 'Oswald', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', 'LiHei Pro', "Xin6", '微軟正黑體', sans-serif;
 }
 .feature-block h1,
 .feature-block h2,
