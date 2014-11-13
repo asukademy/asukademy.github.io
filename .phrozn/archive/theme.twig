@@ -21,11 +21,40 @@
     <script type="text/javascript" src="http://asukademy.com/scripts/uikit.min.js"></script>
     <script type="text/javascript" src="http://asukademy.com/scripts/default.js"></script>
 
+    <script type="text/javascript">var _jf = _jf || [];_jf.push(['p','29887']);_jf.push(['_setFont','xingothic-tc-w4','css','.xingothic-tc-w4']);_jf.push(['_setFont','xingothic-tc-w4','css','xin4']);_jf.push(['_setFont','xingothic-tc-w4','alias','Xin4']);_jf.push(['_setFont','xingothic-tc-w6','css','.xingothic-tc-w6']);_jf.push(['_setFont','xingothic-tc-w6','css','xin6']);_jf.push(['_setFont','xingothic-tc-w6','alias','Xin6']);(function(f,q,c,h,e,i,r,d){var k=f._jf;if(k.constructor===Object){return}var l,t=q.getElementsByTagName("html")[0],a=function(u){for(var v in k){if(k[v][0]==u){if(false===k[v][1].call(k)){break}}}},j=/\S+/g,o=/[\t\r\n\f]/g,b=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,g="".trim,s=g&&!g.call("\uFEFF\xA0")?function(u){return u==null?"":g.call(u)}:function(u){return u==null?"":(u+"").replace(b,"")},m=function(y){var w,z,v,u,x=typeof y==="string"&&y;if(x){w=(y||"").match(j)||[];z=t[c]?(" "+t[c]+" ").replace(o," "):" ";if(z){u=0;while((v=w[u++])){if(z.indexOf(" "+v+" ")<0){z+=v+" "}}t[c]=s(z)}}},p=function(y){var w,z,v,u,x=arguments.length===0||typeof y==="string"&&y;if(x){w=(y||"").match(j)||[];z=t[c]?(" "+t[c]+" ").replace(o," "):"";if(z){u=0;while((v=w[u++])){while(z.indexOf(" "+v+" ")>=0){z=z.replace(" "+v+" "," ")}}t[c]=y?s(z):""}}},n;k.push(["_eventActived",function(){p(h);m(e)}]);k.push(["_eventInactived",function(){p(h);m(i)}]);k.addScript=n=function(u,A,w,C,E,B){E=E||function(){};B=B||function(){};var x=q.createElement("script"),z=q.getElementsByTagName("script")[0],v,y=false,D=function(){x.src="";x.onerror=x.onload=x.onreadystatechange=null;x.parentNode.removeChild(x);x=null;a("_eventInactived");B()};if(C){v=setTimeout(function(){D()},C)}x.type=A||"text/javascript";x.async=w;x.onload=x.onreadystatechange=function(G,F){if(!y&&(!x.readyState||/loaded|complete/.test(x.readyState))){y=true;if(C){clearTimeout(v)}x.src="";x.onerror=x.onload=x.onreadystatechange=null;x.parentNode.removeChild(x);x=null;if(!F){setTimeout(function(){E()},200)}}};x.onerror=function(H,G,F){if(C){clearTimeout(v)}D();return true};x.src=u;z.parentNode.insertBefore(x,z)};a("_eventPreload");m(h);n(r,"text/javascript",false,3000)})(this,this.document,"className","jf-loading","jf-active","jf-inactive","//d3gc6cgx8oosp4.cloudfront.net/js/stable/v/4.6/id/54380144134");</script>
+
     <style>
         .uk-badge {
             padding: 4px 10px;
             border-radius: 3px;
             margin-right: 5px;
+        }
+
+        .article-content img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .article-content p {
+            margin: 2em 0;
+        }
+
+        /* Responsive Youtube */
+        .video {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px; height: 0; overflow: hidden;
+        }
+
+        .video iframe,
+        .video object,
+        .video embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
@@ -37,13 +66,13 @@
 <nav id="header" class="uk-navbar uk-navbar-attached ">
     <div class="uk-container uk-container-center">
 
-        <a id="big-logo" class="uk-navbar-brand uk-hidden-small" href="../">
+        <a id="big-logo" class="uk-navbar-brand uk-hidden-small" href="http://asukademy.com">
             <img class="uk-margin uk-margin-remove" src="http://asukademy.com/media/img/asukademy-logo-horz.png" title="Asukademy" alt="Asukademy">
         </a>
 
         <a href="#" class="uk-navbar-toggle uk-visible-small" data-uk-toggle="{target:'#mainmenu', cls: 'uk-hidden-small'}"></a>
 
-        <a id="small-logo" class="uk-navbar-brand uk-navbar-center uk-visible-small" href="../">
+        <a id="small-logo" class="uk-navbar-brand uk-navbar-center uk-visible-small" href="http://asukademy.com">
             <img class="uk-margin uk-margin-remove" style="max-width: 95%;" src="http://asukademy.com/media/img/asukademy-logo-horz.png" title="Asukademy" alt="Asukademy">
         </a>
 
@@ -119,8 +148,12 @@
                         {{ post.excerpt_content }}
 
                         {% block readmore %}
-                            <a rel="full-article" href="{{ post.absolute_url }}" class="more-link uk-button uk-button-primary uk-float-right">閱讀更多</a>
+                            <p class="uk-text-right">
+                                <a rel="full-article" href="{{ post.absolute_url }}" class="more-link uk-button uk-button-primary">閱讀更多</a>
+                            </p>
                         {% endblock %}
+
+                        <hr />
 
                     {% endblock %}
 
@@ -130,17 +163,17 @@
                         <footer class="entry-footer">
                             <div class="tags">{% block tags %}<a class="uk-badge" href="{{ tag.url }}">{{ tag.name }}</a>{% endblock %}</div>
                         </footer>
+
+                        {% block disqus %}
+                            <hr />
+                            <section>
+                                <h1>Comments</h1>
+                                {% disqus %}
+                            </section>
+                        {% endblock %}
                     {% endblock %}
 
                 </article>
-                {% endblock %}
-
-                {% block disqus %}
-                    <hr />
-                    <section>
-                        <h1>Comments</h1>
-                        {% disqus %}
-                    </section>
                 {% endblock %}
 
                 {% block pagination %}
