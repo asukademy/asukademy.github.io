@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="iem7"><![endif]-->
+<!--[if lt IE 9]><html class="lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IE)]><!-->
+<html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="{{ blog.author_display_name }}">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" media="screen, projection" rel="stylesheet">
+    <link rel="shortcut icon" href="http://asukademy.com/media/favicon.ico" type="image/x-icon">
+	<link href="//cdn-theme.logdown.io/utils/stylesheets/default_code_highlight.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="http://asukademy.com/styles/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="http://asukademy.com/styles/default.css">
+
+    <!-- scripts -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://asukademy.com/scripts/uikit.min.js"></script>
+    <script type="text/javascript" src="http://asukademy.com/scripts/default.js"></script>
+
+    <style>
+        .uk-badge {
+            padding: 4px 10px;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+<!--[if (lt IE 9)|(lt IEMobile 8)]><div class="legacy-browser">Sorry, your browser or device is not supported.<br>Please use Chrome, Firefox, Safari or Internet Explorer 9 (or higher).</div><![endif]-->
+
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IE)]><!-->
+
+<nav id="header" class="uk-navbar uk-navbar-attached ">
+    <div class="uk-container uk-container-center">
+
+        <a id="big-logo" class="uk-navbar-brand uk-hidden-small" href="../">
+            <img class="uk-margin uk-margin-remove" src="http://asukademy.com/media/img/asukademy-logo-horz.png" title="Asukademy" alt="Asukademy">
+        </a>
+
+        <a href="#" class="uk-navbar-toggle uk-visible-small" data-uk-toggle="{target:'#mainmenu', cls: 'uk-hidden-small'}"></a>
+
+        <a id="small-logo" class="uk-navbar-brand uk-navbar-center uk-visible-small" href="../">
+            <img class="uk-margin uk-margin-remove" style="max-width: 95%;" src="http://asukademy.com/media/img/asukademy-logo-horz.png" title="Asukademy" alt="Asukademy">
+        </a>
+
+        <ul id="mainmenu" class="uk-navbar-nav uk-float-right uk-hidden-small">
+            <li>
+                <a href="http://asukademy.com/about/">
+                    <span class="menu-item-title">關於我們</span>
+                    <span class="menu-item-sub-title">About</span>
+                </a>
+            </li>
+
+            <li class="">
+                <a href="http://asukademy.com/courses/">
+                    <span class="menu-item-title">課程資訊</span>
+                    <span class="menu-item-sub-title">Courses</span>
+                </a>
+            </li>
+
+            <li class="uk-active">
+                <a href="http://blog.asukademy.com">
+                    <span class="menu-item-title">部落格</span>
+                    <span class="menu-item-sub-title">Blog</span>
+                </a>
+            </li>
+
+            <li class="">
+                <a href="http://asukademy.com/faq">
+                    <span class="menu-item-title">常見問題</span>
+                    <span class="menu-item-sub-title">FAQ</span>
+                </a>
+            </li>
+
+            <li class="">
+                <a href="http://asukademy.com/contact">
+                    <span class="menu-item-title">聯絡與諮詢</span>
+                    <span class="menu-item-sub-title">Contact</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<section id="banner" style="height:200px ;">
+    <div class="banner-inner">
+
+    </div>
+</section>
+
+<div id="main-body" class="basic-layout">
+    <section id="basic-section" class="main-block">
+        <div class="uk-container uk-container-center">
+            <div class="uk-width-medium-4-6 uk-container-center">
+                {% block posts %}
+                <h1 class="page-title">
+                    <a href="{{ post.absolute_url }}">
+                        {{post.title}}
+                    </a>
+                </h1>
+                <h2 class="sub-title">
+                    Written by <span class="fn">{{ post.author_name }}</span> on
+                    <time datetime="{{ post.published_at.utc }}" pubdate data-updated="true">{{ post.published_at.date }}</time>.
+                </h2>
+
+                <article class="article-content">
+
+                    {% block search_page %}
+                        {{ post.content | search_content: query_string }}
+                    {% endblock %}
+
+                    {% block index_page|tags_page %}
+
+                        {{ post.excerpt_content }}
+
+                        {% block readmore %}
+                            <a rel="full-article" href="{{ post.absolute_url }}" class="more-link uk-button uk-button-primary uk-float-right">閱讀更多</a>
+                        {% endblock %}
+
+                    {% endblock %}
+
+                    {% block show_page %}
+                        {{ post.content }}
+
+                        <footer class="entry-footer">
+                            <div class="tags">{% block tags %}<a class="uk-badge" href="{{ tag.url }}">{{ tag.name }}</a>{% endblock %}</div>
+                        </footer>
+                    {% endblock %}
+
+                </article>
+                {% endblock %}
+
+                {% block disqus %}
+                    <hr />
+                    <section>
+                        <h1>Comments</h1>
+                        {% disqus %}
+                    </section>
+                {% endblock %}
+
+                {% block pagination %}
+                    <div class="pagination">
+                        {% block previous_page %}
+                            <a class="next" href="{{previous_page_url}}">Newer</a>
+                        {% endblock %}
+
+                        <a href="{{ blog.archives_url }}">Blog Archives</a>
+
+                        {% block next_page %}
+                            <a class="prev" href="{{next_page_url}}">Older</a>
+                        {% endblock %}
+
+                    </div>
+                {% endblock %}
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer id="footer">
+    <div class="uk-container uk-container-center uk-text-center">
+
+        <div class="footer-logo">
+            <a href="#" data-uk-smooth-scroll>
+                <img src="http://asukademy.com/media/img/asukademy-logo-hex.png" width="150" alt="Footer LOGO">
+            </a>
+        </div>
+
+        <p class="uk-text-center social-buttons">
+            <a target="_blank" class="uk-icon-button uk-icon-facebook" href="https://fb.me/asukademy"></a>
+
+            <a target="_blank" class="uk-icon-button uk-icon-github" href="https://github.com/asukademy"></a>
+
+            <a class="uk-icon-button uk-icon-envelope-o" href="mailto:asika32764@gmail.com"></a>
+        </p>
+
+        <p>
+            Copyright © 2014 Asukademy. All Rights Reserved.
+        </p>
+        <p class="back">
+            <a href="#" data-uk-smooth-scroll><span class="uk-icon-chevron-up"></span> Back to Top</a>
+        </p>
+    </div>
+</footer>
+
+	<!--<![endif]-->
+</body>
+</html>
