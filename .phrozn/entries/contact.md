@@ -21,7 +21,7 @@ banner:
 ## 其他任何疑問請聯絡
 
 <p class="uk-alert uk-text-center">
-    asika32764@gmail.com / Simon
+    simon@asukademy.com / Simon
 </p>
 
 ## 追蹤我們

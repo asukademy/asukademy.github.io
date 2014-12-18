@@ -256,6 +256,10 @@ dl dd {
 .basic-layout article.article-content {
   margin-top: 50px;
 }
+.side-menu.uk-nav .uk-nav-header {
+  font-size: 1.3em;
+  font-family: 'Oswald', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', 'LiHei Pro', "Xin6", '微軟正黑體', sans-serif;
+}
 .courses-layout h2.category-title {
   margin-top: 50px;
 }
@@ -265,6 +269,12 @@ dl dd {
 .course-logo {
   margin-bottom: 50px;
   width: 550px;
+}
+.small-img {
+  width: 650px;
+}
+.mini-img {
+  width: 300px;
 }
 #footer {
   margin-top: 50px;
