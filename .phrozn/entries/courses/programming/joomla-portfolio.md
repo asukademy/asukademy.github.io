@@ -105,3 +105,15 @@ Joomla 擁有非常豐富的擴充套件生態圈，舉凡您想要製作部落�
 ## 報名
 
 <iframe title= "Accupass 報名表"  marginwidth="0" marginheight="0" frameborder="0" border="0" scrolling="no" src="http://www.accupass.com/event/shareregister/1412181458334201943090" width="100%" height="400px" ></iframe>
+
+## 留言
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=446699862018908&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments" data-href="http://asukademy.com/courses/joomla-portfolio.html" data-width="100%" data-numposts="10" data-colorscheme="light"></div>
